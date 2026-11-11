@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Create an Account</h2>
+        <p>Please fill out this form to register.</p>
+        <hr>
+
+        <form action="#" method="POST">
+            <!-- Full Name -->
+            <div class="input-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+            </div>
+
+            <!-- Email Address -->
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+            </div>
+
+            <!-- Password -->
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Minimum 8 characters" minlength="8" required>
+            </div>
+
+            <!-- Gender Selection -->
+            <div class="input-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </div>
+            </div>
+
+            <!-- Terms & Conditions -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="#">Terms & Privacy Policy</a></label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="register-btn">Register</button>
+        </form>
+
+        <div class="form-footer">
+            <p>Already have an account? <a href="#">Sign in</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
